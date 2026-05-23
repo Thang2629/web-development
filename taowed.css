@@ -1,0 +1,71 @@
+.hop1 {
+    display: flex;
+
+    justify-content: space-between;
+
+    padding: 20px;
+
+    border-bottom: 2px solid rgb(132, 39, 39);
+   
+    
+}
+
+.hop2 {
+    text-align: center;
+
+    padding: 60px;
+    
+}
+
+.hop3 {
+    display: flex;
+
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.hop4 {
+    padding: 40px;
+
+    border: 1px solid black;
+}
+
+
+.box {
+    width: 33%;
+    border: 1px solid black;
+
+    
+
+    padding: 20px;
+}
+
+.reviews {
+    padding: 40px;
+}
+
+.review-container {
+    display: flex;
+
+    justify-content: space-between;
+    gap: 20px;
+   
+
+}
+
+.review {
+    width: 200px;
+
+    border: 2px solid black;
+
+    border-radius: 20px;
+
+    padding: 20px;
+   
+}
+
+footer {
+    text-align: center;
+
+    padding: 30px;
+}
