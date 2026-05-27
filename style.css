@@ -33,11 +33,72 @@ body {
   padding: 60px;
 }
 
-.content {
-  display: flex;
-  gap: 20px;
+.content{
+    display: grid;
 
-  padding: 40px;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+
+
+.projects,
+.experience,
+.education{
+    min-height: 350px;
+    padding: 20px;
+}
+
+
+
+.projects,
+
+.experience{
+    border-right: 2px solid rgb(148, 25, 25);
+
+}
+
+
+
+.project-item{
+  
+
+   padding: 12px 0;
+    border-bottom: 1px solid black;
+    width: 100%;
+    }
+    .project-item:last-child{
+    border-bottom: none;
+    }
+  
+
+
+.opensource{
+    margin-top: 20px;
+
+    padding-top: 20px;
+
+    border-top: 2px solid black;
+}
+
+.experience a{
+    display: inline-block;
+
+    margin-top: 10px;
+}
+
+
+
+.education ul{
+    margin-top: 10px;
+
+    padding-left: 20px;
+}
+
+.education li{
+    margin-top: 5px;
 }
 
 .card {
@@ -52,22 +113,35 @@ body {
   padding: 40px;
 
   border-top: 1px solid black;
+  width: 400px;
+ 
+  
 }
 
 .review-container {
   display: flex;
+  text-align: center;
+  
   gap: 20px;
+  justify-content: space-between;
+  gap: 520px;
+  padding: 20px;
+ 
 
   margin-top: 20px;
 }
 
 .review {
-  flex: 1;
+ 
+ 
 
   border: 2px solid black;
   border-radius: 20px;
 
   padding: 20px;
+  font-size: 7px;
+ 
+
 }
 
 footer {
