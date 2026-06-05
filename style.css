@@ -12,47 +12,32 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   padding: 20px;
-
-  border-top: 2px solid rgb(132, 39, 39);
-  border-bottom: 2px solid rgb(132, 39, 39);
   background-color: rgb(4, 6, 7);
   color: white;
-  border-right: 2px solid rgb(132, 39, 39);
-  border-left: 2px solid rgb(132, 39, 39);
-}
 
+}
 .menu {
   display: flex;
   gap: 20px;
-
-  
 }
-
 .menu a {
   text-decoration: none;
   color: rgb(227, 215, 215);
 }
-
 .hero {
   text-align: center;
   padding: 60px;
   background-color: rgb(16, 41, 53);
   color: white;
 }
-
 .content{
-    display: grid;
-
+    display: flex;
     grid-template-columns: 1fr 1fr 1fr;
-
     border-top: 2px solid black;
     border-bottom: 2px solid black;
     background-color: rgb(14, 47, 83);
 }
-
-
 
 .projects,
 .experience,
@@ -60,22 +45,11 @@ body {
     min-height: 350px;
     padding: 20px;
 }
-
-
-
 .projects,
-
 .experience{
     border-right: 2px solid rgb(148, 25, 25);
-
 }
-
-
-
 .project-item{ 
-  
-  
-
    padding: 12px 0 ;
     border-bottom: 1px solid rgb(14, 168, 42);
     width: 100%;
@@ -83,20 +57,14 @@ body {
     .project-item:last-child{
     border-bottom: none;
     }
-  
-
-
 .opensource{
     margin-top: 20px;
-
     padding-top: 20px;
-
     border-top: 2px solid black;
 }
 
 .experience a{
     display: inline-block;
-
     margin-top: 10px;
 }
 
@@ -104,7 +72,6 @@ body {
 
 .education ul{
     margin-top: 10px;
-
     padding-left: 20px;
 }
 
@@ -114,15 +81,12 @@ body {
 
 .card {
   flex: 1;
-
   border: 1px solid black;
-
   padding: 20px;
 }
 
 .reviews {
   padding: 40px;
-
   border-top: 1px solid black;
   width: 400px;
  
@@ -131,36 +95,59 @@ body {
 
 .review-container {
   display: flex;
-  text-align: center;
-  
+  text-align: center; 
   gap: 20px;
   justify-content: space-between;
   gap: 520px;
   padding: 20px;
- 
-
   margin-top: 20px;
 }
 
-.review:hover {
-  
-  transform: scale(1.05);
-  transition: 0.3s ;
+.review {
   cursor: pointer;
-  
- 
- 
-
   border: 2px solid black;
   border-radius: 20px;
-
   padding: 20px;
   font-size: 7px;
- 
-
-}
+ }
 
 footer {
   text-align: center;
   padding: 30px;
+}
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 10px;
+   
+    width: 100%;
+    
+  }
+  .logo {
+     margin-bottom: 10px;
+    }
+}
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .experience  {
+    flex-direction: column;
+    
+    
+  }
+}
+@media (max-width: 768px) {
+  .review-container {
+    width: 100%;
+    padding: 20px;
+    flex-direction: column;
+     gap: 20px;
+    
+
+}
 }
